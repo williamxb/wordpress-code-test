@@ -1,0 +1,12 @@
+# ignore environment variables
+.env
+
+# ignore everything in the "wp-content" directory except for themes.
+!wp-app/
+wp-app/*
+
+!wp-app/wp-content/
+wp-app/wp-content/*
+
+!wp-app/wp-content/themes/
+!wp-app/wp-content/themes/*

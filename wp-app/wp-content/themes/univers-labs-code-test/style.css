@@ -1,0 +1,203 @@
+/*
+Theme Name: BlankSlate
+Theme URI: https://github.com/tidythemes/blankslate
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: Please read: tidythemes.com/concept. Donations: https://calmestghost.com/donate. BlankSlate is the definitive WordPress boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
+Tags: accessibility-ready, one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Version: 2021
+Requires at least: 5.0
+Tested up to: 5.8
+Requires PHP: 7.0
+License: GNU General Public License v3 or Later
+License URI: https://www.gnu.org/licenses/gpl.html
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2021 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  margin: auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 786px) {
+  .container {
+    width: 750px;
+    padding: unset;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 910px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1232px;
+  }
+}
+
+#copyright {
+  color: grey;
+}
+
+.row {
+  display: flex;
+  flex-flow: wrap row;
+}
+
+.background__whats-on {
+  background: #e4f3fd;
+  background: linear-gradient(180deg, transparent 10%, #e4f3fd 10%);
+  padding-bottom: 10rem;
+}
+
+/* */
+
+h1.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #0037d2;
+}
+
+.page-id-5 .container {
+  margin-top: 5rem;
+}
+
+/* flexible layout */
+
+.whats-on .large-box {
+  background: #0b2e64;
+}
+
+.row .large-box,
+.row .small-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.row .large-box {
+  width: 60%;
+}
+
+.row .small-box {
+  width: 40%;
+}
+
+.box-content {
+  padding: 20px;
+  font-weight: lighter;
+}
+
+.box-content h1 {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.large-box .box-content {
+  background: #fff;
+  min-width: 40%;
+  max-width: 55%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+img.whats-on__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.whats-on-image__container {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.small-box .box-content {
+  background: #0b2e64;
+  color: #fff;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.small-box.no-image .box-content a {
+  height: 100%;
+  display: flex;
+  flex-flow: wrap column;
+}
+
+.small-box.no-image .box-content {
+  position: unset;
+  width: unset;
+  height: calc(100% - 40px);
+}
+
+.small-box.no-image .box-content .subtitle {
+  margin-bottom: auto;
+}
+
+.small-box a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.large-box a {
+  color: #000;
+  text-decoration: none;
+}
+
+@media(max-width:991px) {
+    .row {
+        flex-flow: wrap column;
+    }
+
+    .row .small-box,
+    .row .large-box {
+        width: 100%;
+    }
+
+    .row.whats-on > * {
+        margin-bottom: 3rem;
+    }
+    
+    .large-box .box-content,
+    .small-box .box-content {
+        position: unset;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+a.whats-on__link img.whats-on__image {
+    transition: all ease-in-out 400ms;
+    display: block;
+}
+
+a.whats-on__link:hover img.whats-on__image {transform: scale(1.1);filter: brightness(0.8);transition: all ease-in-out 1s;}
+
+a.whats-on__link:hover .box-arrow {
+    transform: translate(10px, 0px);
+    transition: transform 400ms ease;
+}
+
+.box-content .box-arrow {
+    transition: transform 200ms ease;
+}
