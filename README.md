@@ -33,8 +33,6 @@ WordPress details:
 User: `user`
 Pass: `UniversLabs`
 
-## Creating database dumps
-
 ## WPCD - WordPress Docker Compose
 
 [nezhar/wordpress-docker-compose](https://github.com/nezhar/wordpress-docker-compose) was used as a base for this project. See [nezhar's readme](https://github.com/nezhar/wordpress-docker-compose#readme) for additional detail.
