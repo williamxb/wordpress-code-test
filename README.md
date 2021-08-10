@@ -1,4 +1,4 @@
-# Univers Labs WordPress Test
+# WordPress Code Test
 
 ### Screenshots:
 Desktop:
