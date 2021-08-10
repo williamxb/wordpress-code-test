@@ -1,5 +1,14 @@
 # Univers Labs WordPress Test
 
+### Screenshots:
+Desktop:
+
+![Screenshot](https://raw.githubusercontent.com/williamxb/wordpress-code-test/main/screenshots/homepage-1366x768.png)
+
+Mobile:
+
+![Screenshot](https://raw.githubusercontent.com/williamxb/wordpress-code-test/main/screenshots/homepage%20(iPhone%20X%20simulated).png)
+
 ## Deployment requirements
 
 - Docker, Docker-Compose
